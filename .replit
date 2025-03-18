@@ -1,5 +1,20 @@
-run = "cowsay Configure me!"
+run = "nix develop"
 entrypoint = "README.md"
 
 [nix]
 channel = "stable-24_05"
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Build ASmap"
+mode = "sequential"
+author = 11084461
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "nix develop"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "kartograf run map"
