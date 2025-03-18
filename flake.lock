@@ -1,0 +1,274 @@
+{
+  "nodes": {
+    "kartograf": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "rpki-cli": "rpki-cli",
+        "utils": "utils_2"
+      },
+      "locked": {
+        "lastModified": 1742159381,
+        "narHash": "sha256-F73Vt+PomupY8oDIYN94Rh7XGNS64wea+pHWZn7B2+M=",
+        "owner": "asmap",
+        "repo": "kartograf",
+        "rev": "d0a581734bc3241cd7ab83cd1f932b93a8f59db1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "asmap",
+        "repo": "kartograf",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1732350895,
+        "narHash": "sha256-GcOQbOgmwlsRhpLGSwZJwLbo3pu9ochMETuRSS1xpz4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0c582677378f2d9ffcb01490af2f2c678dcb29d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-24.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "narHash": "sha256-SkvkvjwdnSfuwaFa2K3mj5O+Yub15FvhwhKV29UacrE=",
+        "type": "tarball",
+        "url": "https://storage.googleapis.com/replit-nixpkgs/nixpkgs-24.11.tar.gz"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "kartograf": "kartograf",
+        "nixpkgs": "nixpkgs_2",
+        "rpki-client": "rpki-client"
+      }
+    },
+    "rpki-cli": {
+      "inputs": {
+        "nixpkgs": [
+          "kartograf",
+          "nixpkgs"
+        ],
+        "rpki-client-src": "rpki-client-src",
+        "rpki-openbsd-src": "rpki-openbsd-src",
+        "utils": "utils"
+      },
+      "locked": {
+        "lastModified": 1727388158,
+        "narHash": "sha256-WtNCxHZ7jtpZHEagvWMcyY4pHjFAHk9k/3Z0K3pJka8=",
+        "owner": "asmap",
+        "repo": "rpki-client-nix",
+        "rev": "b9b68b6d4b8170213c741362797ea13029913222",
+        "type": "github"
+      },
+      "original": {
+        "owner": "asmap",
+        "repo": "rpki-client-nix",
+        "type": "github"
+      }
+    },
+    "rpki-client": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rpki-client-src": "rpki-client-src_2",
+        "rpki-openbsd-src": "rpki-openbsd-src_2",
+        "utils": "utils_3"
+      },
+      "locked": {
+        "lastModified": 1737062502,
+        "narHash": "sha256-kH7cIe/el0Jm7lBQo10kT6+qeUB0AE9y0H/fPCKkrmw=",
+        "owner": "asmap",
+        "repo": "rpki-client-nix",
+        "rev": "43ef3e6c8646e9409efb52871cd6b030cb791285",
+        "type": "github"
+      },
+      "original": {
+        "owner": "asmap",
+        "repo": "rpki-client-nix",
+        "type": "github"
+      }
+    },
+    "rpki-client-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736205605,
+        "narHash": "sha256-2/xe6BBZYo0IDYDFbPEdbCvYTdzQEb1Zl0BBQf/Z0aA=",
+        "owner": "rpki-client",
+        "repo": "rpki-client-portable",
+        "rev": "98954f463a60c1aa1f9c0c0de83370558ba452c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rpki-client",
+        "repo": "rpki-client-portable",
+        "rev": "98954f463a60c1aa1f9c0c0de83370558ba452c7",
+        "type": "github"
+      }
+    },
+    "rpki-client-src_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736205605,
+        "narHash": "sha256-2/xe6BBZYo0IDYDFbPEdbCvYTdzQEb1Zl0BBQf/Z0aA=",
+        "owner": "rpki-client",
+        "repo": "rpki-client-portable",
+        "rev": "98954f463a60c1aa1f9c0c0de83370558ba452c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rpki-client",
+        "repo": "rpki-client-portable",
+        "rev": "98954f463a60c1aa1f9c0c0de83370558ba452c7",
+        "type": "github"
+      }
+    },
+    "rpki-openbsd-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1735901016,
+        "narHash": "sha256-+KexblAyPNHWwAGAdOzfWjZKXuwSqp12FrXFHuyFQnE=",
+        "owner": "rpki-client",
+        "repo": "rpki-client-openbsd",
+        "rev": "27f8f58679530181c9e2f546046b714ad6f85b8c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rpki-client",
+        "repo": "rpki-client-openbsd",
+        "rev": "27f8f58679530181c9e2f546046b714ad6f85b8c",
+        "type": "github"
+      }
+    },
+    "rpki-openbsd-src_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1735901016,
+        "narHash": "sha256-+KexblAyPNHWwAGAdOzfWjZKXuwSqp12FrXFHuyFQnE=",
+        "owner": "rpki-client",
+        "repo": "rpki-client-openbsd",
+        "rev": "27f8f58679530181c9e2f546046b714ad6f85b8c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rpki-client",
+        "repo": "rpki-client-openbsd",
+        "rev": "27f8f58679530181c9e2f546046b714ad6f85b8c",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_3": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1694529238,
+        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "utils_2": {
+      "inputs": {
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "utils_3": {
+      "inputs": {
+        "systems": "systems_3"
+      },
+      "locked": {
+        "lastModified": 1694529238,
+        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
