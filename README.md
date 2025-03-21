@@ -10,9 +10,9 @@ Specifically, it includes:
 
 ### Run the thing!
 
-You can run `kartograf` by clicking the green "Run" button at the top of this screen. You can follow the progress in the `Console` tab.
+If you forked [this app](https://replit.com/@jurraca/ASmapWorkshop) in Replit, you can run `kartograf` by clicking the green "Run" button at the top of this screen. You can follow the progress in the `Console` tab.
 
-You can also run it from the Shell, by running `nix develop` then `kartograf run map`.
+If you cloned this repo, you can run this in a shell by running `nix develop` then `./run map`.
 
 Data for each run is stored in a folder named by the Unix timestamp at which the run began. Source data is stored under `data/` and the run output under `out/`. If all goes well, at the end you'll have a `final_result.txt` located at `out/a_unix_timestamp/final_result.txt`.
 
