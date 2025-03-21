@@ -14,4 +14,4 @@ author = 11084461
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "nix develop --command bash -c \"kartograf map\""
+args = "./run_kartograf.sh"
