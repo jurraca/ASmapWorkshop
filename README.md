@@ -3,20 +3,20 @@
 This workspace comes with all the software you need to build an ASmap, compare it to others, and use it with Bitcoin Core.
 
 Specifically, it includes:
-- the `kartograf` program
+- the `kartograf` program ([repo](https://github.com/asmap/kartograf))
 - the `rpki-client` program, which `kartograf` depends on
 - a checkout of the Bitcoin Core repository, under `bitcoin/`
 
 
 ### Run the thing!
 
-If you forked [this app](https://replit.com/@jurraca/ASmapWorkshop) in Replit, you can run `kartograf` by clicking the green "Run" button at the top of this screen. You can follow the progress in the `Console` tab.
+If you forked [this app](https://replit.com/@jurraca/ASmapWorkshop) in Replit, you can run `kartograf` by clicking the green "Run" button at the top of this screen. The Console tab will prompt you for a timestamp, if you want to set kartograf to run at a future time; if you want to run now, just press Enter. You should see logs start to stream in the Console view.
 
 If you cloned this repo, you can run this in a shell by running `nix develop` then `./run map`.
 
-Data for each run is stored in a folder named by the Unix timestamp at which the run began. Source data is stored under `data/` and the run output under `out/`. If all goes well, at the end you'll have a `final_result.txt` located at `out/a_unix_timestamp/final_result.txt`.
+The process should take approximately 30 minutes on a standard 8GB memory replit env. Data for each run is stored in a folder named by the Unix timestamp at which the run began. Source data is stored under `data/` and the run output under `out/`. If all goes well, at the end you'll have a `final_result.txt` located at `out/a_unix_timestamp/final_result.txt`.
 
-### While it cooks
+### What it's doing
 
 While it cooks, let's discuss what it's doing.
 
